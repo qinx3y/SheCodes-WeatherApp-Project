@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(218, 223, 248);
+  font-family: "Alumni Sans Collegiate One", sans-serif;
+  font-family: "Courgette", cursive;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Mohave", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nosifer", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Playpen Sans", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Young Serif", serif;
+}
+
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 20px;
+}
