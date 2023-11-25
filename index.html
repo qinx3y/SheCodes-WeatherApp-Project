@@ -15,19 +15,20 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter city name..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="button" />
         </form>
       </header>
       <div class="main-data">
         <div>
-          <h1>Montreal</h1>
+          <h1 id="city">Montreal</h1>
           <p class="details">
             Friday 10:00am, Sunny
             <br />
