@@ -75,15 +75,23 @@ strong {
   font-size: 24px;
 }
 
-.weather-forcast {
-  margin-top: 20px;
-  text-align: center;
+.weather-forecast {
+  margin-top: 10px;
   color: grey;
+  display: flex;
+  text-align: center;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+
+.weather-forecast-icon {
+  padding: 10px;
+}
+.weather-forecast-temperature {
+  padding: 10px;
 }
 
 footer {

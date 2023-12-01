@@ -57,7 +57,40 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "t03fa5b3184f6b5553db696oc043a09a";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class ="weather-forcast-day">
+      <div class="weather-forecast-date">${day}</div>
+              <div class="weather-forecast-icon">🌤</div>
+              <div class="weather-forecast-temperature">
+              <div class="weather-forecast-temperature">
+              <strong>18°</strong>
+              </div>
+                <div class="weather-forecast-temperature">12°</div>
+              </div>
+            </div>
+            
+        `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Montreal");
+getForecast("Montreal");
