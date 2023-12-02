@@ -76,11 +76,10 @@ strong {
 }
 
 .weather-forecast {
-  margin-top: 10px;
   color: grey;
   display: flex;
   text-align: center;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .weather-forecast-date {
@@ -89,11 +88,10 @@ strong {
 }
 
 .weather-forecast-icon {
-  width: 50px;
+  width: 66px;
 }
 .weather-forecast-temperature {
-  padding-left: 5px;
-  padding-right: 5px;
+  font-weight: bold;
 }
 
 footer {
