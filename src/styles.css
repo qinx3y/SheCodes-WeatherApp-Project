@@ -91,7 +91,8 @@ strong {
   padding: 10px;
 }
 .weather-forecast-temperature {
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 15px;
 }
 
 footer {
